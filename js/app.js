@@ -1,5 +1,6 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
+const iconTimes = document.querySelector('.menu-link.hideMenu');
 
 const activeClass = 'is-show';
 
@@ -14,6 +15,9 @@ window.addEventListener('click', (event) => {
   }
 });
 
+iconTimes.addEventListener('click', () => {
+  menu.classList.remove(activeClass);
+});
 $(document).ready(function () {
   $('.customer-list').slick({
     infinite: true,
