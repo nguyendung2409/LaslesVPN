@@ -1,0 +1,118 @@
+.header {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+  .header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .header-container .menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0 40px;
+  }
+  .header .header-container .menu .menu-item .menu-link {
+    color: inherit;
+  }
+  .header .header-container .menu .menu-item--auth {
+    display: none;
+  }
+  .header .header-container .header-auth {
+    display: flex;
+    gap: 0 30px;
+    align-items: center;
+  }
+  .header-signIn {
+    color: #0b132a;
+    font-weight: 500;
+  }
+  .header-signUp {
+    color: #f53855;
+    padding: 13px 45px;
+    border-radius: 50px;
+    border: 1px solid;
+    font-weight: 500;
+  }
+  .header .header-container .menu-toggle {
+    display: none;
+    width: 30px;
+    height: 20px;
+  }
+  .header .header-container .menu-toggle span {
+    width: 100%;
+    height: 3px;
+    pointer-events: none;
+    background-color: #0b132a;
+  }
+
+  .header .header-container .menu .menu-item .menu-link::after{
+    content: "";
+  
+    background: #f53855;
+    height: 3px;
+    display: block;
+    
+    position: relative;
+    top: 5px;
+    width: 0;
+    transition: 0.25s linear;
+  }
+  .header .header-container .menu .menu-item .menu-link:hover::after{
+    width: 100%;
+  }
+  @media screen and (max-width: 1023px) {
+    .header {
+      padding-top: 25px;
+      padding-bottom: 50px;
+    }
+    .header .header-container .header-auth {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .header .header-container .menu-toggle {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    .header .header-container .menu .menu-item .menu-link {
+      display: block;
+      padding: 20px;
+    }
+    .header .header-container .menu .menu-item--auth {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 20px;
+    }
+  
+    .header .header-container .menu {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px 0;
+  
+      width: 300px;
+      padding-top: 40px;
+      border-left: 1px solid #ddd;
+  
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+  
+      transform: translateX(100%);
+      transition: 0.25s linear;
+  
+      background-color: white;
+    }
+    .header-signUp{
+      padding: 10px 30px;
+    }
+    
+    .header .header-container .menu.is-show{
+      transform: translateX(0);
+    }
+  }

@@ -1,0 +1,15 @@
+.partner {
+  padding-bottom: 50px;
+}
+.partner .partner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 60px;
+}
+@media screen and (max-width: 1023.98px) {
+  .partner .partner-container {
+    gap: 0 15px;
+  }
+}
+

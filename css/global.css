@@ -1,0 +1,38 @@
+body {
+  line-height: 1;
+  font-family: 'Rubik', sans-serif;
+  color: #4f5665;
+  font-weight: 400;
+  background-color: white;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.button {
+  text-align: center;
+  white-space: nowrap;
+  font-family: 'Rubik', sans-serif;
+  border-radius: 100px;
+  border: none;
+}
+.button--primary {
+  font-weight: bold;
+  background-color: #f53838;
+  color: white;
+}
+.button--rounded {
+  border-radius: 10px;
+  padding: 17px 75px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .button {
+    padding: 13px 25px;
+  }
+}

@@ -1,0 +1,43 @@
+.subscribe {
+  min-height: 233px;
+}
+.subscribe .subscribe-container {
+  padding: 58px 70px;
+  min-height: 233px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.subscribe .subscribe-container .subscribe-content {
+  max-width: 370px;
+}
+.subscribe .subscribe-container .subscribe-content .subscribe-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45px;
+  color: #0b132a;
+  padding-bottom: 20px;
+}
+.subscribe .subscribe-container .subscribe-content .subscribe-desc {
+  color: #4f5665;
+}
+@media screen and (max-width: 1023.98px) {
+  .subscribe .subscribe-container .subscribe-content .subscribe-title{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .subscribe .subscribe-container {
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 40px;
+  }
+  .subscribe .subscribe-container .subscribe-content .subscribe-title {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+}

@@ -1,0 +1,12 @@
+@import "./reset.css";
+@import "./global.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./intro.css";
+
+@import "./feature.css";
+@import "./plan.css";
+@import "./partner.css";
+@import "./customer.css";
+@import "./subscribe.css";
+@import "./footer.css"

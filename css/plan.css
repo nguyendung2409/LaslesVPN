@@ -1,0 +1,110 @@
+.plan {
+  padding-bottom: 30px;
+}
+.plan .plan-header {
+  text-align: center;
+}
+.plan .plan-header .plan-heading {
+  font-weight: 500;
+  font-size: 35px;
+  padding-bottom: 20px;
+  color: #0b132a;
+}
+.plan .plan-header .plan-desc {
+  color: #4f5665;
+  padding-bottom: 30px;
+}
+.plan .plan-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 50px;
+  margin-bottom: 150px;
+}
+.plan .plan-list .plan-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 70px 50px 70px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: 0.25s all;
+}
+.plan .plan-list .plan-item:hover {
+  border: 2px solid #f53838;
+}
+
+.plan .plan-list .plan-item .plan-image {
+  padding-bottom: 30px;
+}
+.plan .plan-list .plan-item .plan-title {
+  color: #0b132a;
+  padding-bottom: 30px;
+}
+.plan .plan-list .plan-item .plan-detail {
+  margin-bottom: 50px;
+}
+.plan .plan-list .plan-item .plan-detail .plan-info {
+  display: flex;
+  gap: 0 20px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.plan .plan-list .plan-item .plan-detail .plan-info .span {
+  color: #4f5665;
+  font-size: 14px;
+}
+.plan .plan-list .plan-item .plan-price {
+  color: #0b132a;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+.button--outline {
+  color: #f53838;
+  padding: 13px 63px;
+  font-weight: 700;
+  border: 1px solid;
+  transition: 0.25s all;
+}
+.button--outline:hover{
+    color: white;
+    background-color: #f53838;
+}
+.plan .network {
+  text-align: center;
+}
+.plan .network .network-heading {
+  color: #0b132a;
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  line-height: 50px;
+}
+.plan .network .network-desc {
+    line-height: 30px;
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .plan .plan-list {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    grid-auto-columns: 310px;
+    gap: 0 30px;
+    grid-template-columns: unset;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    scroll-padding: 1rem;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+  .plan .plan-list .plan-item {
+    scroll-snap-align: start;
+  }
+  .plan .network .network-heading {
+    font-size: 28px;
+  }
+}
